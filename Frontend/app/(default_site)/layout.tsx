@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
-import { Footer } from "@/app/ui/universal/Footer";
+// import { Footer } from "@/app/ui/universal/Footer";
 import { Navbar } from "@/app/ui/universal/Navbar";
 import { Ribbon } from "@/app/ui/landing/Ribbon";
 // import metaDataImg from "@/public/assets/metadata/landing.png";
