@@ -9,7 +9,7 @@ import emailerRoute from "./routes/emailer";
 config();
 
 // connect to Database
-connectToDB();
+// connectToDB();
 
 // configure app
 const app: Express = express();
