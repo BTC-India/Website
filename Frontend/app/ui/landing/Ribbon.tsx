@@ -3,9 +3,9 @@ import Image from "next/image";
 import logoImg from "@/public/assets/logo/logo.png";
 import { sourceCodeProFont } from "@/app/lib/fonts";
 
-const ReviewCard = ({ key }: { key: number }) => {
+const ReviewCard = () => {
   return (
-    <div key={key} className="flex flex-row items-center gap-3">
+    <div className="flex flex-row items-center gap-3">
       <Image src={logoImg} width={15} height={15} alt="btc-logo" />
       <div
         className={`w-fit h-fit font-semibold ${sourceCodeProFont.className} text-sm sm:text-base`}
