@@ -10,7 +10,7 @@ export function BlogCard({ cardData }: BlogPostMetaDataProps): JSX.Element {
   return (
     <div className="relative blog-card flex flex-row flex-wrap items-start justify-center w-fit gap-6">
       {/* Container for the blog image */}
-      <div className="relative image-container w-fit h-fit rounded-md group overflow-hidden">
+      <div className="relative image-container w-fit h-fit group overflow-hidden border-2 border-yellow-500 rounded-lg">
         {/* Link to the blog post with an image */}
         <Link
           href={`/blog/${cardData.slug}`}
@@ -26,7 +26,7 @@ export function BlogCard({ cardData }: BlogPostMetaDataProps): JSX.Element {
         </Link>
       </div>
       {/* Container for blog metadata */}
-      <div className="relative metadata flex flex-col items-start gap-4 max-w-[448px] text-wrap w-fit h-full">
+      <div className="relative metadata flex flex-col items-start gap-4 w-fit sm:w-[448px] text-wrap  h-full">
         <div className="heading-publisheddate-readingtime w-fit h-fit flex flex-col gap-2">
           {/* Container for publish date and time */}
           <div className="publish-date flex flex-row gap-2 items-center w-fit h-fit">
@@ -50,14 +50,15 @@ export function BlogCard({ cardData }: BlogPostMetaDataProps): JSX.Element {
         </div>
         {/* Container for tags */}
         <div className="tags w-full flex items-start justify-start flex-row flex-wrap h-fit gap-2">
-          {cardData.tags.map((tag: string, index: number) => (
-            <div
-              key={index}
-              className="tag text-xs sm:text-sm px-2 py-1 bg-neutral-300 text-neutral-800 rounded-sm"
-            >
-              {tag} {/* Display each tag */}
-            </div>
-          ))}
+          {cardData.tags &&
+            cardData.tags.map((tag: string, index: number) => (
+              <div
+                key={index}
+                className="tag text-xs sm:text-sm px-2 py-1 bg-neutral-300 text-neutral-800 rounded-sm"
+              >
+                {tag} {/* Display each tag */}
+              </div>
+            ))}
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const ReviewCard = () => {
       <div
         className={`w-fit h-fit font-semibold ${sourceCodeProFont.className} text-sm sm:text-base`}
       >
-        Asia's biggest BTC Focussed Event
+        Asia's biggest BTC Focused Event
       </div>
     </div>
   );

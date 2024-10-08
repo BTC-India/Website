@@ -15,7 +15,6 @@ export function Navbar(): JSX.Element {
     // { text: "Hackathon", link: "#hackathon" },
     // { text: "Organizers", link: "#organizers" },
     { text: "Blogs", link: "/blog" },
-    { text: "Community", link: "https://x.com/btcindia_org" },
   ];
 
   // Add border and backdrop blur when the user scrolls to the navbar
@@ -89,7 +88,7 @@ export function Navbar(): JSX.Element {
                   isHamburgerOpened ? "flex" : "hidden"
                 } `}
               >
-                <ul className="relative z-10  flex w-fit h-fit gap-4 sm:flex-row flex-col">
+                <ul className="relative z-10  flex w-fit h-fit gap-4 sm:flex-row flex-col items-start sm:items-center">
                   {tabs.map((tab, index) => (
                     <li key={index}>
                       {tab.link.startsWith("#") ? (
@@ -124,6 +123,14 @@ export function Navbar(): JSX.Element {
                       )}
                     </li>
                   ))}
+                  <li className="w-fit h-fit">
+                    <Link
+                      href={"https://t.me/btcindia_org"}
+                      className={`w-fit h-fit ${sourceCodeProFont.className} font-bold sm:text-lg md:text-xl text-white bg-neutral-900 px-4 py-2 rounded-md`}
+                    >
+                      Join Community
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
