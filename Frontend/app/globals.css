@@ -2,27 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+.markdown h1 {
+  @apply text-3xl font-bold text-gray-900 dark:text-white;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.markdown h2 {
+  @apply text-2xl font-semibold text-gray-800 dark:text-gray-200;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.markdown h3 {
+  @apply text-xl font-medium text-gray-700 dark:text-gray-300;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.markdown ul {
+  @apply list-disc pl-5 mt-4;
+}
+
+.markdown li {
+  @apply mb-2;
+}
+
 .markdown p {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    /* Adjust as necessary */
-  }
-  
-  .markdown pre {
-    width: fit-content;
-    height: fit-content;
-  }
-  
-  .markdown code {
-    text-wrap: wrap;
-    font-size: medium;
-  }
-  
-  .markdown a {
-    color: blue;
-    @apply underline dark:decoration-yellow-500 decoration-yellow-500 text-blue-800 dark:text-cyan-500;
-  }
-  
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @apply text-base text-gray-700 dark:text-gray-300;
+}
+
+.markdown pre {
+  @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-md;
+  width: fit-content;
+  height: fit-content;
+}
+
+.markdown code {
+  @apply bg-gray-200 dark:bg-gray-700 text-sm p-1 rounded;
+}
+
+.markdown a {
+  @apply underline text-blue-600 dark:text-blue-400;
+  color: blue;
+  decoration-color: yellow;
+}
+
   @layer base {
   :root {
         --background: 0 0% 100%;
