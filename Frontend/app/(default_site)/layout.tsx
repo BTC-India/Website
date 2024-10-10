@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
-// import { Footer } from "@/app/ui/universal/Footer";
+import { Footer } from "@/app/ui/universal/Footer";
 import { Navbar } from "@/app/ui/universal/Navbar";
-import { Ribbon } from "@/app/ui/landing/Ribbon";
 // import metaDataImg from "@/public/assets/metadata/landing.png";
 
 export const metadata: Metadata = {
@@ -43,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`antialiase bg-transparent bg-gradient-to-br from-[#ffe7b7] to-[#ffe7b8]`}
+        className={`antialiase bg-[#ffeed3]`}
       >
         <div className="wrapper flex w-full h-fit relative">
           <div className="gradient-blurred absolute w-full h-dvh -z-10 bg-transparent bg-gradient-to-br top-0 left-0 from-yellow-700 to-[#eaeaea] to-45% opacity-30 blur-md"></div>
@@ -52,15 +51,12 @@ export default function RootLayout({
               <section className="navbar w-full h-fit">
                 <Navbar />
               </section>
-              <section className="ribbon w-full h-fit">
-                <Ribbon />
-              </section>
             </section>
             <section className="w-full h-full page-contents relative z-10">
               {children}
             </section>
             <section className="footer w-full h-fit flex items-center justify-center z-10">
-              {/* <Footer /> */}
+              <Footer />
             </section>
           </div>
         </div>

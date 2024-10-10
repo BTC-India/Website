@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`antialiase bg-transparent bg-gradient-to-br from-[#ffe7b7] to-[#ffe7b8]`}
+        className={`antialiase bg-[#ffeed3]`}
       >
         {children}
         <Analytics />

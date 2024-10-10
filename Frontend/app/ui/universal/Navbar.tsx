@@ -7,36 +7,20 @@ import { useState, useEffect } from "react";
 import { sourceCodeProFont, MinecraftFont } from "@/app/lib/fonts";
 
 export function Navbar(): JSX.Element {
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isHamburgerOpened, setIsHamburgerOpened] = useState<boolean>(false);
 
   const tabs = [
     { text: "Home", link: "/" },
+    { text: "Speakers", link: "#speakers" },
     // { text: "Hackathon", link: "#hackathon" },
     // { text: "Organizers", link: "#organizers" },
     { text: "Blogs", link: "/blog" },
   ];
 
-  // Add border and backdrop blur when the user scrolls to the navbar
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <nav
-      className={`w-full h-fit flex items-center justify-center  bg-[#c9c9ca] transition-all duration-300 border-b border-transparent
-        ${
-          isScrolled
-            ? "backdrop-blur-sm  border-[#a2a1a1] bg-opacity-55"
-            : "bg-opacity-0"
-        }`}
+      className={`w-full h-fit flex items-center justify-center  transition-all duration-300 border-b border-transparent
+        `}
     >
       <div className="wrapper relative flex w-full max-w-screen-2xl items-center justify-between">
         <div className="relative flex px-4 md:py-4 lg:py-5 sm:px-6 md:px-8 lg:px-10 py-3 flex-row items-center justify-between w-full">
@@ -106,7 +90,7 @@ export function Navbar(): JSX.Element {
                             }
                             setIsHamburgerOpened(!isHamburgerOpened);
                           }}
-                          className={`duration-200 text-black ${sourceCodeProFont.className} font-bold sm:text-lg md:text-xl hover:text-orange-900`}
+                          className={`duration-200 text-black ${sourceCodeProFont.className} font-bold text-sm sm:text-base md:text-lg lg:text-xl hover:text-orange-900`}
                         >
                           {tab.text}
                         </Link>
@@ -116,7 +100,7 @@ export function Navbar(): JSX.Element {
                             setIsHamburgerOpened(!isHamburgerOpened)
                           }
                           href={tab.link}
-                          className={`duration-200 text-black ${sourceCodeProFont.className} font-bold sm:text-lg md:text-xl hover:text-orange-900`}
+                          className={`duration-200 text-black ${sourceCodeProFont.className} font-bold text-sm sm:text-base md:text-lg lg:text-xl  hover:text-orange-900`}
                         >
                           {tab.text}
                         </Link>
