@@ -18,7 +18,7 @@ export function Hero(): JSX.Element {
             <div
               className={`head-text ${zenDotFont.className} text-2xl sm:text-4xl md:text-5xl text-center max-w-[300px] sm:max-w-[480px] `}
             >
-              Biggest Bitcoin Event in India
+              Biggest Bitcoin Event in Asia
             </div>
             <div
               className={`date text-center font-light ${sourceCodeProFont.className}`}
