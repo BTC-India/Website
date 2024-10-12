@@ -9,7 +9,6 @@ import cloudleftImg from "@/public/assets/graphics/clouds/cloud-left.png";
 import cloudrightImg from "@/public/assets/graphics/clouds/cloud-right.png";
 import ballonrightImg from "@/public/assets/graphics/ballons/rocket-left.png";
 
-
 export function Hero(): JSX.Element {
   return (
     <section className="hero relative w-full h-fit flex items-center justify-center overflow-x-hidden">
@@ -32,11 +31,9 @@ export function Hero(): JSX.Element {
               <div className="placeholder w-full h-fit bg-[#ffda33] py-2 text-center rounded-md select-none">
                 Coming Soon
               </div>
-              <button className="partner-with-us-button w-full h-fit flex items-center flex-row gap-2 justify-center bg-black py-2 rounded-md">
-                <span className="text-white text-sm sm:text-base">
-                  Partner with Us
-                </span>
-                <FaExternalLinkAlt className="text-sm sm:text-base text-white" />
+              <button className="partner-with-us-button w-full h-fit flex items-center flex-row gap-2 justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300">
+                <span className="text-sm sm:text-base">Partner with Us</span>
+                <FaExternalLinkAlt className="text-sm sm:text-base" />
               </button>
             </div>
           </div>

@@ -16,23 +16,24 @@ export function AboutAndVision(): JSX.Element {
           className={`description text-center sm:text-lg text-neutral-600 h-fit w-fit max-w-[700px] ${robotoFont.className}`}
         >
           The premier fest dedicated to promoting Bitcoin adoption in India.{" "}
-          <span className="font-bold text-black">BTC India</span> is taking place at
-          the prestigious <span className="font-bold text-black">IIT Bombay</span>,
-          this event brings together industry leaders, policy makers, investors,
+          <span className="font-bold text-black">BTC India</span> is taking
+          place at the prestigious{" "}
+          <span className="font-bold text-black">IIT Bombay</span>, this event
+          brings together industry leaders, policy makers, investors,
           developers, and enthusiasts from around the world.
         </div>
         <div className="buttons flex flex-col gap-3 mt-2">
-          <button className="w-[250px] sm:w-[280px] h-fit py-3 bg-black text-white rounded-md text-center flex flex-row gap-2 items-center justify-center">
+          <button className="w-[250px] sm:w-[280px] h-fit py-3 bg-black hover:bg-[#ffda33] rounded-md text-center flex flex-row gap-2 items-center justify-center font-bold text-white hover:text-black border-2 border-yellow-600 hover:border-black duration-300">
             <span
-              className={`text-white text-sm sm:text-base ${sourceCodeProFont.className}`}
+              className={`text-sm sm:text-base ${sourceCodeProFont.className}`}
             >
               To be a Speaker Apply
             </span>
             <FaExternalLinkAlt />
           </button>
-          <button className="w-[250px] sm:w-[280px] h-fit py-3 bg-black text-white rounded-md text-center flex flex-row gap-2 items-center justify-center">
+          <button className="w-[250px] sm:w-[280px] h-fit py-3 bg-black hover:bg-[#ffda33] rounded-md text-center flex flex-row gap-2 items-center justify-center font-bold text-white hover:text-black border-2 border-yellow-600 hover:border-black duration-300">
             <span
-              className={`text-white text-sm sm:text-base ${sourceCodeProFont.className}`}
+              className={`text-sm sm:text-base ${sourceCodeProFont.className}`}
             >
               To Suggest a Speaker
             </span>

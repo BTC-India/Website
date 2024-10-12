@@ -4,7 +4,7 @@ import { zenDotFont } from "@/app/lib/fonts";
 import faqbannerImg from "@/public/assets/landing/faq-banner.png";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import { robotoFont } from "@/app/lib/fonts";
 
 interface FAQItem {
@@ -76,33 +76,60 @@ export function FAQ(): JSX.Element {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className="individual-wrapper h-fit w-full max-w-[594px] text-wrap flex flex-col border  border-[#d4d4d8] rounded-lg group  hover:border-[#d9d9f3] duration-300 items-center bg-white"
+                className={`individual-wrapper h-fit w-full max-w-[594px] text-wrap flex flex-col items-center bg-white relative shadow-sm transition-shadow ${
+                  openIndex === index ? "rounded-t-md" : "rounded-md"
+                }`}
               >
                 <div
                   onClick={() =>
                     setOpenIndex(index === openIndex ? null : index)
                   }
-                  className="question-and-button py-4 px-6 flex flex-row items-center w-full h-full transition duration-300 cursor-pointer justify-between group"
+                  className={`question-and-button py-4 px-6 flex flex-row items-center w-full h-full duration-300 cursor-pointer justify-between group gap-4 bg-white border-neutral-300 relative transition-all border ${
+                    openIndex === index ? "rounded-t-md" : "rounded-md"
+                  }`}
+                  style={{
+                    boxShadow:
+                      openIndex === index
+                        ? "0px 0px 15px rgba(0, 0, 0, 0.15)"
+                        : "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                  }}
                 >
-                  <div className="question font-semibold dark:text-neutral-200 text-neutral-600 dark:group-hover:text-purple-300 group-hover:text-purple-800 duration-300 text-base md:text-lg">
+                  <div
+                    className={`question font-semibold  duration-300 text-base md:text-lg bg-white ${robotoFont.className}`}
+                  >
                     {faq.question}
                   </div>
                   <div className="button-arrow group">
                     <IoIosArrowDown
-                      className={`text-base md:text-xl dark:group-hover:text-purple-300 group-hover:text-purple-800 duration-500 ${
+                      className={`text-base md:text-xl  duration-500 ${
                         openIndex === index ? "rotate-180" : "rotate-0"
                       }`}
                     />
                   </div>
                 </div>
-                <div
-                  className={`answer px-6 overflow-hidden transition-[max-height] duration-700 ease-in-out absolute bg-white`}
-                  style={{ maxHeight: openIndex === index ? "1000px" : "0px" }}
+                <motion.div
+                  className={`answer overflow-hidden absolute bg-white z-20 w-full rounded-b-md ${robotoFont.className}`}
+                  initial={{
+                    height: 0,
+                  }}
+                  animate={{
+                    height: openIndex === index ? "auto" : 0,
+                  }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: 0.3,
+                  }}
+                  style={{
+                    position: "absolute",
+                    top: "100%",
+                    left: 0,
+                    boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.15)",
+                  }}
                 >
-                  <p className="dark:text-neutral-300 text-neutral-800 py-4 md:text-base text-sm">
+                  <p className="text-neutral-800 py-4 md:text-base text-sm border-b border-x border-neutral-300 rounded-b-md px-6">
                     {faq.answer}
                   </p>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>
