@@ -142,7 +142,7 @@ function Card({
     if (cardNo === 2 && hoveredCard == null) {
       setActualPriority(0);
     }
-  }, [hoveredCard]);
+  }, [hoveredCard, cardNo]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -156,7 +156,7 @@ function Card({
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  },);
 
   return (
     <motion.div
