@@ -18,7 +18,7 @@ const ReviewCard = () => {
 
 export function Ribbon() {
   return (
-    <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden border border-neutral-800 bg-[#ffc801]">
+    <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden border border-neutral-800 bg-[#e5edf0]">
       <Marquee className="[--duration:20s]">
         {Array.from({ length: 5 }, (_, index) => (
           <ReviewCard key={index} />
