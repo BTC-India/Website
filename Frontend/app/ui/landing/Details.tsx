@@ -63,7 +63,7 @@ export function Details(): JSX.Element {
 
   return (
     <section className="w-full h-fit flex items-center justify-center">
-      <div className="wrapper relative w-full h-fit flex items-center justify-center space-x-4 p-8">
+      <div className="wrapper relative w-full h-fit flex items-center justify-center space-x-4 p-8 overflow-x-hidden">
         <div className="sm:flex hidden card-holder relative w-[10rem] h-[16rem] sm:w-[18rem] sm:h-[19rem] md:w-[20rem] md:h-96 ">
           {/* Map over the cardData to generate each card */}
           {cardData.map((card, index) => (
