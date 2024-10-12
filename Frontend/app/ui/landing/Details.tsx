@@ -88,7 +88,7 @@ export function Details(): JSX.Element {
           >
             {cardData.map((card, index) => (
               <SwiperSlide key={index} className="w-[200px] h-[200px]">
-                <div className="card w-[350px] h-[400px] flex items-center border-8 border-white rounded-md">
+                <div className="card w-[300px] h-[350px] flex items-center border-8 border-white rounded-md">
                   <div
                     className={`rounded-lg w-full h-full ${card.className} text-black flex flex-col sm:gap-1 gap-6 items-center py-6 px-5`}
                   >
