@@ -24,20 +24,20 @@ export function WhyJoin(): JSX.Element {
       title: "Developers & Builders",
       frontImg: whyImg1,
       backtext: [
-        "Networking and Growth opportunities.",
-        "Interact with top leaders & visionaries.",
-        "Focused on Innovation & learning.",
-        "Multiple side events & workshops to learn.",
+        "Free Accommodation and Food.",
+        "Extended support in venture building.",
+        "Network with fellow best developers.",
+        "Career growth opportunities.",
       ],
     },
     {
       title: "Conference Attendees",
       frontImg: whyImg2,
       backtext: [
-        "Free Accommodation and Food.",
-        "Extended support in venture building.",
-        "Network with fellow best developers.",
-        "Career growth opportunities.",
+        "Networking and Growth opportunities.",
+        "Interact with top leaders & visionaries.",
+        "Focused on Innovation & learning.",
+        "Multiple side events & workshops to learn.",
       ],
     },
   ];
