@@ -37,8 +37,8 @@ export function Hero(): JSX.Element {
               </button>
             </div>
           </div>
-          <div className="image">
-            <Image src={btcRoomImg} alt="btcroom" width={600} />
+          <div className="image w-fit">
+            <Image src={btcRoomImg} alt="btcroom" className="w-[600px] md:w-[900px] " />
           </div>
         </div>
         <div className="framer-images w-full h-full absolute z-0"></div>
