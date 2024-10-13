@@ -32,7 +32,7 @@ export function Details(): JSX.Element {
       title: "Hackathon",
       content: [
         "60 Hours for hacking",
-        "1 Bitcoin in Prize pool",
+        "X Bitcoin in Prize pool",
         "Track-based bounty system",
         "Selected 120 Builder Teams",
       ],
