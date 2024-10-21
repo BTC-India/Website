@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import btcRoomImg from "@/public/assets/landing/btcroom.png";
 import { zenDotFont } from "@/app/lib/fonts";
 import { sourceCodeProFont } from "@/app/lib/fonts";
@@ -28,9 +29,11 @@ export function Hero(): JSX.Element {
             <div
               className={`buttons ${sourceCodeProFont.className} w-48 sm:w-56 flex flex-col gap-3 mt-5`}
             >
-              <div className="placeholder w-full h-fit bg-[#ffda33] py-2 text-center rounded-md select-none">
-                Coming Soon
-              </div>
+              <Link 
+                href={`https://btcindia.nuvo.bi/`}
+                className="placeholder w-full h-fit flex text-center items-center justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300">
+                Apply to hack
+              </Link>
               <button className="partner-with-us-button w-full h-fit flex items-center flex-row gap-2 justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300">
                 <span className="text-sm sm:text-base">Partner with Us</span>
                 <FaExternalLinkAlt className="text-sm sm:text-base" />
