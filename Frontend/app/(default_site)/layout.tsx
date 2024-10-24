@@ -5,7 +5,7 @@ import { Navbar } from "@/app/ui/universal/Navbar";
 // import metaDataImg from "@/public/assets/metadata/landing.png";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.DOMAIN as string),
+  // metadataBase: new URL(process.env.DOMAIN as string),
   title: "BTC India | Home",
   description:
     "This is the webiste of BTC India (Hackthon + conference) happening at IIT Bombay in December 2024.",

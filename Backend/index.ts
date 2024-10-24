@@ -1,7 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import { config } from "dotenv";
-import { connectToDB } from "./config/db";
 // Import routes
 import emailerRoute from "./routes/emailer";
 
