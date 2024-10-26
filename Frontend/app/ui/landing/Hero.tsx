@@ -29,19 +29,27 @@ export function Hero(): JSX.Element {
             <div
               className={`buttons ${sourceCodeProFont.className} w-48 sm:w-56 flex flex-col gap-3 mt-5`}
             >
-              <Link 
+              <Link
                 href={`https://btcindia.nuvo.bi/`}
-                className="placeholder w-full h-fit flex text-center items-center justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300">
+                className="placeholder w-full h-fit flex text-center items-center justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300 glitch-effect"
+              >
                 Apply to hack
               </Link>
-              <button className="partner-with-us-button w-full h-fit flex items-center flex-row gap-2 justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300">
+              <Link
+                href={"/partners/apply"}
+                className="partner-with-us-button w-full h-fit flex items-center flex-row gap-2 justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300"
+              >
                 <span className="text-sm sm:text-base">Partner with Us</span>
                 <FaExternalLinkAlt className="text-sm sm:text-base" />
-              </button>
+              </Link>
             </div>
           </div>
           <div className="image w-fit">
-            <Image src={btcRoomImg} alt="btcroom" className="w-[600px] md:w-[900px] " />
+            <Image
+              src={btcRoomImg}
+              alt="btcroom"
+              className="w-[600px] md:w-[900px] "
+            />
           </div>
         </div>
         <div className="framer-images w-full h-full absolute z-0"></div>

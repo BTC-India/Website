@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const partnerSchema = new mongoose.Schema({
   name: { type: String, required: true },
@@ -7,10 +7,11 @@ const partnerSchema = new mongoose.Schema({
   telegramId: { type: String, required: true },
   partnershipType: {
     type: String,
-    enum: ['Sponsorship', 'Media Partner', 'Community Partner', 'Other'],
+    enum: ["Sponsorship", "Media Partner", "Community Partner", "Other"],
     required: true,
   },
   message: { type: String },
 });
 
-export default mongoose.models.Partner || mongoose.model('Partner', partnerSchema);
+export default mongoose.models.Partner ||
+  mongoose.model("Partner", partnerSchema);

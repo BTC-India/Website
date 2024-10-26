@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 import { Footer } from "@/app/ui/universal/Footer";
 import { Navbar } from "@/app/ui/universal/Navbar";
-// import metaDataImg from "@/public/assets/metadata/landing.png";
+import metaDataImg from "@/public/metadata/landing.png";
 
 export const metadata: Metadata = {
-  // metadataBase: new URL(process.env.DOMAIN as string),
+  metadataBase: new URL(process.env.DOMAIN as string),
   title: "BTC India | Home",
   description:
     "This is the webiste of BTC India (Hackthon + conference) happening at IIT Bombay in December 2024.",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: process.env.SITE_NAME as string,
-    // images: metaDataImg.src,
+    images: metaDataImg.src,
   },
   twitter: {
     card: "summary",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     creator: "@scienmanas",
     siteId: "@btcindia_org",
     site: process.env.SITE_NAME as string,
-    // images: metaDataImg.src,
+    images: metaDataImg.src,
   },
 };
 
@@ -41,9 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`antialiase bg-[#ffeed3]`}
-      >
+      <body className={`antialiase bg-[#ffeed3]`}>
         <div className="wrapper flex w-full h-fit relative">
           <div className="gradient-blurred absolute w-full h-dvh -z-10 bg-transparent bg-gradient-to-br top-0 left-0 from-yellow-700 to-[#eaeaea] to-45% opacity-30 blur-md"></div>
           <div className="contents-wrapper relative flex flex-col w-full h-fit gap-10 z-10 ">
