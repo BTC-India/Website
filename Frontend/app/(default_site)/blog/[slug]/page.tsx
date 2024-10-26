@@ -19,6 +19,7 @@ type BlogPageProps = {
   params: { slug: string }; // Blog post slug received as a parameter
 };
 
+
 // Define SharingLinkConfigProps as an array of objects for social sharing links
 type SharingLinkConfigProps = {
   name: string;
