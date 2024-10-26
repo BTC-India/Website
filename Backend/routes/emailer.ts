@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 const router = Router();
 const PORT: number = 465;
-const HOST: string = "smtppro.zoho.in";
+const HOST: string = "smtp.gmail.com";
 
 // Route - 1: Sending mail
 router.post("/send-email", async (req: Request, res: Response) => {
@@ -32,6 +32,7 @@ router.post("/send-email", async (req: Request, res: Response) => {
     subject: subject,
     text: message,
   };
+
 
   try {
     await transporter.sendMail(mailOptions);

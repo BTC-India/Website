@@ -61,6 +61,19 @@ export function FAQ(): JSX.Element {
       question: "Is the Travel Sponsored for Hackathon teams?",
       answer: "No, Although we have Free Accomodation for you !",
     },
+    {
+      question: "What is maximum team size?",
+      answer: "Max size of team is 5.",
+    },
+    {
+      question: "Do every member need to apply individually",
+      answer:
+        "Yes every member need to apply individually and then form the team after registering",
+    },
+    {
+      question: "Query not resolved?",
+      answer: "Don't worry simply jump to the community and ask.",
+    },
   ];
 
   return (

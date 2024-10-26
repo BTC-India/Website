@@ -2,6 +2,7 @@ import { sourceCodeProFont } from "@/app/lib/fonts";
 import { zenDotFont } from "@/app/lib/fonts";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { robotoFont } from "@/app/lib/fonts";
+import Link from "next/link";
 
 export function AboutAndVision(): JSX.Element {
   return (
@@ -23,22 +24,28 @@ export function AboutAndVision(): JSX.Element {
           developers, and enthusiasts from around the world.
         </div>
         <div className="buttons flex flex-col gap-3 mt-2">
-          <button className="w-[250px] sm:w-[280px] h-fit py-3 bg-black hover:bg-[#ffda33] rounded-md text-center flex flex-row gap-2 items-center justify-center font-bold text-white hover:text-black border-2 border-yellow-600 hover:border-black duration-300">
+          <Link
+            href={"/speakers/apply"}
+            className="w-[250px] sm:w-[280px] h-fit py-3 bg-black hover:bg-[#ffda33] rounded-md text-center flex flex-row gap-2 items-center justify-center font-bold text-white hover:text-black border-2 border-yellow-600 hover:border-black duration-300"
+          >
             <span
               className={`text-sm sm:text-base ${sourceCodeProFont.className}`}
             >
               To be a Speaker Apply
             </span>
             <FaExternalLinkAlt />
-          </button>
-          <button className="w-[250px] sm:w-[280px] h-fit py-3 bg-black hover:bg-[#ffda33] rounded-md text-center flex flex-row gap-2 items-center justify-center font-bold text-white hover:text-black border-2 border-yellow-600 hover:border-black duration-300">
+          </Link>
+          <Link
+            href={"/speakers/suggest"}
+            className="w-[250px] sm:w-[280px] h-fit py-3 bg-black hover:bg-[#ffda33] rounded-md text-center flex flex-row gap-2 items-center justify-center font-bold text-white hover:text-black border-2 border-yellow-600 hover:border-black duration-300"
+          >
             <span
               className={`text-sm sm:text-base ${sourceCodeProFont.className}`}
             >
               To Suggest a Speaker
             </span>
             <FaExternalLinkAlt />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

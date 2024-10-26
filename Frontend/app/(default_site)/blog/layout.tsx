@@ -1,5 +1,5 @@
-import { Metadata } from "next"; 
-// import metaDataImg from "@/public/assets/metadata/blog.png"; 
+import { Metadata } from "next";
+import metaDataImg from "@/public/metadata/blog.png";
 
 // Generate the metadata for the blogs page
 export async function generateMetadata(): Promise<Metadata> {
@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: `Blogs - ${process.env.SITE_NAME}`,
       description: "Read the blogs, from heart of BTC India",
       url: `${process.env.DOMAIN}/blog`,
-      //   images: [metaDataImg.src], // Image for OpenGraph
+      images: [metaDataImg.src], // Image for OpenGraph
       type: "article",
       siteName: `${process.env.SITE_NAME}`,
       locale: "en_US",
@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary", // Twitter card type
       title: `Blogs - ${process.env.SITE_NAME}`,
       description: "Read the blogs, from heart of BTC India",
-      //   images: [metaDataImg.src],
+      images: [metaDataImg.src],
       creator: "@scienmanas",
       siteId: "@btcindia_org",
       site: `${process.env.DOMAIN}/blog`,
