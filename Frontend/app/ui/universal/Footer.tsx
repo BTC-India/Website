@@ -88,10 +88,10 @@ export function Footer(): JSX.Element {
               <div className="email w-fit h-fit text-neutral-300">
                 Email:{" "}
                 <Link
-                  href={"mailto:contact@btc-india.org"}
+                  href={"mailto: partnership@btc-india.org"}
                   className="text-sm sm:text-base duration-200 hover:text-neutral-100"
                 >
-                  contact@btc-india.org
+                  partnership@btc-india.org
                 </Link>
               </div>
             </div>
