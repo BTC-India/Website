@@ -52,12 +52,6 @@ export function Footer(): JSX.Element {
               height={40}
               src={swapsoLogo}
             />
-            <Image
-              className="w-fit h-fit"
-              alt="blockon"
-              height={40}
-              src={blockonLogo}
-            />
           </div>
           <div className="org-and-links-info w-full h-fit flex flex-row items-center justify-between gap-6 flex-wrap">
             <div className="oragnized-by w-fit h-fit flex flex-col gap-1">
@@ -69,7 +63,7 @@ export function Footer(): JSX.Element {
               <div
                 className={`w-fit h-fit text-wrap font-bold text-base sm:text-lg md:text-xl text-white ${zenDotFont.className}`}
               >
-                SwapSo.io & BLOCK ON
+                SwapSo.io
               </div>
             </div>
             <div className="contact-info flex flex-col w-fit h-fit">
