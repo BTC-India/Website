@@ -12,6 +12,7 @@ export function Navbar(): JSX.Element {
   const tabs = [
     { text: "Home", link: "/" },
     { text: "Speakers", link: "#speakers" },
+    { text: "Partner", link: "#partner" },
     // { text: "Hackathon", link: "#hackathon" },
     // { text: "Organizers", link: "#organizers" },
     { text: "Blogs", link: "/blog" },
@@ -107,14 +108,14 @@ export function Navbar(): JSX.Element {
                       )}
                     </li>
                   ))}
-                  <li className="w-fit h-fit">
+                  {/* <li className="w-fit h-fit">
                     <Link
                       href={"https://t.me/btcindia_org"}
                       className={`w-fit h-fit ${sourceCodeProFont.className} font-bold sm:text-lg md:text-xl text-white bg-neutral-900 px-4 py-2 rounded-md`}
                     >
                       Join Community
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

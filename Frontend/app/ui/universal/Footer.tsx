@@ -46,18 +46,14 @@ export function Footer(): JSX.Element {
       <div className="actual-part bg-black w-full h-fit flex items-center justify-center pb-12 pt-14 sm:pt-16">
         <div className="wrapper relative flex items-start w-full max-w-screen-xl h-fit flex-col gap-6 px-4">
           <div className="org-logo w-fit flex flex-row items-center h-fit flex-wrap gap-1">
-            <Image
-              className="w-fit h-fit"
-              alt="swapso"
-              height={40}
-              src={swapsoLogo}
-            />
-            <Image
-              className="w-fit h-fit"
-              alt="blockon"
-              height={40}
-              src={blockonLogo}
-            />
+            <Link href={"https://swapso.io"}>
+              <Image
+                className="w-fit h-fit"
+                alt="swapso"
+                height={40}
+                src={swapsoLogo}
+              />
+            </Link>
           </div>
           <div className="org-and-links-info w-full h-fit flex flex-row items-center justify-between gap-6 flex-wrap">
             <div className="oragnized-by w-fit h-fit flex flex-col gap-1">
@@ -69,7 +65,7 @@ export function Footer(): JSX.Element {
               <div
                 className={`w-fit h-fit text-wrap font-bold text-base sm:text-lg md:text-xl text-white ${zenDotFont.className}`}
               >
-                SwapSo.io & BLOCKON
+                SwapSo.io
               </div>
             </div>
             <div className="contact-info flex flex-col w-fit h-fit">

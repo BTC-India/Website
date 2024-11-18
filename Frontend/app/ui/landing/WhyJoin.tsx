@@ -24,7 +24,7 @@ export function WhyJoin(): JSX.Element {
       title: "Developers & Builders",
       frontImg: whyImg1,
       backtext: [
-        "Free Accommodation and Food.",
+        // "Free Accommodation and Food.",
         "Extended support in venture building.",
         "Network with fellow best developers.",
         "Career growth opportunities.",

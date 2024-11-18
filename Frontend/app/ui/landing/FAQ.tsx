@@ -21,7 +21,7 @@ export function FAQ(): JSX.Element {
     {
       question: "When and where will BTC India take place?",
       answer:
-        "BTC India will be held from December 16th to 18th, 2024, at IIT Bombay, India",
+        "TBA",
     },
     {
       question: "Who is the target audience for BTC India?",
@@ -52,11 +52,11 @@ export function FAQ(): JSX.Element {
       answer:
         "Yes, But the prices will be minimal to ensure we attract only serious audience.",
     },
-    {
-      question: "Is there accommodation available for attendees?",
-      answer:
-        "Yes, Accommodation for Teams participating in the Hackathon is Free but attendees of the conference need to arrange their accommodation.",
-    },
+    // {
+    //   question: "Is there accommodation available for attendees?",
+    //   answer:
+    //     "Yes, Accommodation for Teams participating in the Hackathon is Free but attendees of the conference need to arrange their accommodation.",
+    // },
     {
       question: "Is the Travel Sponsored for Hackathon teams?",
       answer: "No, Although we have Free Accomodation for you !",
@@ -68,7 +68,7 @@ export function FAQ(): JSX.Element {
     {
       question: "Do every member need to apply individually",
       answer:
-        "Yes every member need to apply individually and then form the team after registering",
+        "You need to form a team in registration dashboard on devfolio.",
     },
     {
       question: "Query not resolved?",

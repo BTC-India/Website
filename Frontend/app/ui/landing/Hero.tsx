@@ -19,21 +19,21 @@ export function Hero(): JSX.Element {
             <div
               className={`head-text ${zenDotFont.className} text-2xl sm:text-4xl md:text-5xl text-center max-w-[300px] sm:max-w-[480px] `}
             >
-              Biggest Bitcoin Event in Asia
+              Biggest Bitcoin Event in India
             </div>
             <div
               className={`date text-center font-light ${sourceCodeProFont.className}`}
             >
-              16th - 18th December, 2024 at IIT BOMBAY
+              Dates to be announced soon.
             </div>
             <div
               className={`buttons ${sourceCodeProFont.className} w-48 sm:w-56 flex flex-col gap-3 mt-5`}
             >
               <Link
-                href={`https://btcindia.nuvo.bi/`}
-                className="placeholder w-full h-fit flex text-center items-center justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300 glitch-effect"
+                href={`https://wa.me/9928893561`}
+                className="placeholder w-full h-fit flex text-center items-center justify-center bg-black py-2 rounded-md font-bold text-white hover:text-black hover:bg-[#ffda33] border-2 border-yellow-400 hover:border-black duration-300"
               >
-                Apply to hack
+                Host a meetup 🎙️
               </Link>
               <Link
                 href={"/partners/apply"}

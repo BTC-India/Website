@@ -54,7 +54,7 @@ export function Details(): JSX.Element {
     },
     {
       title: "Date & Venue",
-      content: ["16th - 18th December, 2024", "At IIT Bombay, India"],
+      content: ["TBA"],
       className: "bg-[#ff7b66]",
       priority: 1,
       cardNo: 3,
